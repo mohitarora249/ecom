@@ -3,7 +3,12 @@ import Link from "next/link";
 const Navbar = () => {
     return (
         <nav className="sticky top-0 shadow-md z-10 bg-gray-50">
-            <div className="mx-auto max-w-screen-xl px-4 py-3 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-screen-xl px-4 py-3 sm:px-6 lg:px-8 flex justify-between">
+                <Link legacyBehavior href="/">
+                    <a className="flex items-center gap-4 font-bold">
+                        ECOM
+                    </a>
+                </Link>
                 <div className="flex items-center justify-end gap-4">
                     <div className="flex items-center gap-4">
                         {/* <div className="relative">
